@@ -28,6 +28,10 @@ a{
 	color: #FFFFFF;
 }
 
+.tooltip-inner{
+    white-space: pre;
+}
+
 .bg-light {
 	background-color: rgba(255, 255, 255, 1) !important;
 }
@@ -219,7 +223,18 @@ a{
     padding-bottom: 20px;
 }
 
-.input{
+.error .form-group{
+    border: red;
+}
+
+.error-label{
+    display: block;
+    color:#414455;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.inputs{
     width: 500px;
     border-radius: 10px solid #414455;
     height: 50px;
@@ -250,14 +265,13 @@ a{
 .reg{
     font-size: 40px;
     padding-left: 150px;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
 }
 
 .btn-b{
     width: 500px;
     border-radius: 10px solid #414455;
     background-color: #FFFFFF;
-    padding: 8px;
 }
 
 /*Registration style end */

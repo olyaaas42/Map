@@ -6,6 +6,7 @@
         <title>Интерактивная карта выпускников</title> 
         <link rel="stylesheet" href="/src/css/style.css">
         <link rel="stylesheet" href="/src/css/reset.css">
+        <script src="/src/jquery-3.6.4.min.js"></script>
     </head>
     <body>
         <div class="parent">
@@ -16,21 +17,19 @@
                 </div>
                 <div>
                     <h1 class="text-primary autor">Вход в систему</h1>
-                    <form class="info">
+                    <form class="info" id="add-form" action="">
                         <div class="form-group">
-                            <label for="exampleFormControlInput1 " class="text-primary">Электронная почта</label>
-                            <input type="email" class="form-controtext-primary input" id="exampleFormControlInput1" required>
+                            <label for="inputEmail" class="text-primary ">Электронная почта</label>
+                            <input data-required="true" name="email" type="email" class="form-control inputs" id="inputEmail" >
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1" class="text-primary">Пароль</label>
-                            <input type="password" class="form-control input" id="exampleInputPassword1" required>
-                         </div>
+                            <input data-min-length="6" data-required="true" name="password" type="password" class="form-control inputs" id="exampleInputPassword1" >
+                        </div>
                         <div class="recover">
                             <a href="/src/components/recoveryPassword/RecoveryPassword.html" class="text-primary">Восстановить пароль</a>
                         </div>
-                        <button type="submit" class="btn-base">
-                            <a href="/src/components/userCabinet/UserCabinet.html" class="text-primary mx-sm-3 link">ВОЙТИ</a>
-                        </button>
+                        <button type="submit" class="btn-base text-primary">Войти</button>
                         <button type="submit" class="btn-base">
                             <a href="/src/components/registration/Registration.html" class="text-primary mx-sm-3 link">ЗАРЕГИСТРИРОВАТЬСЯ</a>
                         </button>
@@ -38,5 +37,7 @@
                 </div>
             </div>
         </div>
+
+        <script defer src="/src/js/Validate.js"></script>
     </body>
 </html>
