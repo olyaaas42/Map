@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru_RU">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width-device-width; initial-scale=1.0">
+        <title>Интерактивная карта выпускников</title> 
+        <link rel="stylesheet" href="/src/css/style.css">
+        <link rel="stylesheet" href="/src/css/reset.css">
+    </head>
+    <body>
+        <div class="parent">
+            <div class="child">
+                <div class="return text-primary">
+                    <img src="/src/image/person-circle.svg" class="text-primary">
+                    Личная информация
+                </div>
+                <div class="person">
+                    <form class="perInfo">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control perInfo" placeholder="Фамилия" disabled>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control perInfo" placeholder="Имя" disabled>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control perInfo" placeholder="Отчество" disabled>
+                            </div>
+                        </div>
+                    </form>
+                    <nav class="list">
+                        <ul class="ul__list">
+                            <li class="ul__item text-primary">
+                                <img src="/src/image/arrow-right-square.svg">
+                                Специальность:
+                                <input class="form-control inf" type="text" placeholder="Неизвестно" disabled>
+                            </li>
+                            <li class="ul__item text-primary">
+                                <img src="/src/image/arrow-right-square.svg">
+                                Год выпуска:
+                                <input class="form-control inf" type="text" placeholder="Неизвестно" disabled>
+                            </li>
+                            <li class="ul__item text-primary">
+                                <img src="/src/image/arrow-right-square.svg">
+                                Адрес:
+                                <input class="form-control inf" type="text" placeholder="Неизвестно" disabled>
+                            </li>
+                            <li class="ul__item text-primary">
+                                <img src="/src/image/arrow-right-square.svg">
+                                Работа:
+                                <input class="form-control inf" type="text" placeholder="Неизвестно" disabled>
+                            </li>
+                            <li class="ul__item text-primary">
+                                <img src="/src/image/pencil.svg">
+                                <a href="/" class="text-primary">Редактировать данные</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button type="submit" class="btn-u">
+                        <a href="/src/index.html" class="text-primary mx-sm-3 link">На главную</a>
+                    </button>
+                    <button type="submit" class="btn-u">
+                        <a href="/src/index.html" class="text-primary mx-sm-3 link">Выйти</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
